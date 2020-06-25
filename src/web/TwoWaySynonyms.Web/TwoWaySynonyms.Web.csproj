@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>14814d45-2b16-4d43-af2d-7e7a6e742015</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\application\TwoWaySynonyms.Application\TwoWaySynonyms.Application.csproj" />
+    <ProjectReference Include="..\..\application\TwoWaySynonyms.DAO\TwoWaySynonyms.DAO.csproj" />
+    <ProjectReference Include="..\..\application\TwoWaySynonyms.Infrastructure\TwoWaySynonyms.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\core\TwoWaySynonyms.InfrastructureContracts\TwoWaySynonyms.InfrastructureContracts.csproj" />
+  </ItemGroup>
+
+</Project>

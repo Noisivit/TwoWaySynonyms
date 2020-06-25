@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  mssql:
+    image: microsoft/mssql-server-linux
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssql-data:/var/opt/mssql
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Vim@net2020
+      - MSSQL_PID=Express
+    
+
+volumes:
+  mssql-data:
