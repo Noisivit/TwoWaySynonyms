@@ -1,5 +1,5 @@
 # Simplification
-For simplisity I used the same response models in webapp and in application layer.
+For simplisity I used the same models in webapp and in application layer.
 
 # Running steps
 1) From repository catalog run preconfigured docker-compose file with MS SQL database image ```docker-compose up```
